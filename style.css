@@ -1,0 +1,154 @@
+/*Global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    overflow: hidden;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    padding: 5rem 0;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.nav-brand{
+    width: 12rem;
+}
+
+.menu-icons i{
+    font-size: 3.5rem;
+    color: #1e5595;
+    cursor: pointer;
+}
+
+.close i{
+    color: #1e5595;
+}
+
+.nav-list{
+    width: 25rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -26rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 650ms ease-in;
+}
+
+.nav-list.active{
+    right: 0;
+}
+
+.close{
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+}
+
+.nav-item{
+    margin: 1.5rem 0;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0,.7);
+}
+
+/*Banner*/
+.banner{
+    width: 100%;
+    height: 45vh;
+    background: url(images/hero3.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 6rem;
+    margin-bottom: -5rem;
+}
+
+.main-message{
+    width: 100%;
+    max-width: 100rem;
+    color: #fafafa;
+    
+    text-align: center;
+
+}
+
+.main-message p{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.btn{
+    background-color: #1e5595;
+    border-radius: 1rem;
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: left;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+    transition: background-color 650ms;
+}
+
+.btn:hover{
+    background-color: #0d407a;
+    transition: 1s;
+}
+
+
